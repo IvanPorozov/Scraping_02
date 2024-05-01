@@ -1,0 +1,16 @@
+class Locators:
+    FIRST_PAGE = '(//li[@itemprop="itemListElement"])[1]//span[@itemprop="name"]/text()'
+    SECOND_PAGE = '(//li[@itemprop="itemListElement"])[2]//span[@itemprop="name"]/text()'
+    THIRD_PAGE = '(//li[@itemprop="itemListElement"])[3]/span/text()'
+
+    ID = '//p[@data-component="Body" and text()="FARFETCH ID: "]//span[@data-component="Body"]/text()'
+    ITEM_GROUP_ID = '//p[@data-component="Body" and text()="Brand style ID: "]//span[@data-component="Body"]/text()'
+    MPN = '//p[@data-component="Body" and text()="Brand style ID: "]//span[@data-component="Body"]/text()'
+    TITLE = '//p[@data-testid="product-short-description"]/text()'
+    DESCRIPTION = '//div[@data-component="Body"]/p[@data-component="Body"]/text()'
+    IMAGE_LINK = '//button[@data-testid="productcard-image"]/div/img/@src | (//button/img/@src)[1]'
+    ADDITIONAL_IMAGE_LINK = '(//button/img/@src)[1]'
+    AVAILABILITY = '//p[@data-component="FootnoteBold"]/text()'
+    BRAND = '//h1//a[@data-component="LinkGhostDark"]/text()'
+    PRICE = '//p[@data-component="PriceLarge"]/text()'
+    PRODUCT_CATEGORY = '(//a[@data-component="Breadcrumb"])[4]/text()'
