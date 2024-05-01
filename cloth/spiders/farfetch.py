@@ -26,7 +26,7 @@ class FarfetchSpider(scrapy.Spider):
     def parse(self, response):
         second_page = response.xpath(Locators.SECOND_PAGE).get()
         product_type = response.xpath(Locators.FIRST_PAGE).get() + '/' + second_page + '/'
-        gpc = ' > ' + second_page
+        gpc = '/' + second_page
         products = response.xpath('//li[@data-testid="productCard"]')
 
         for product in products:
