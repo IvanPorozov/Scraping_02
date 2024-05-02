@@ -13,7 +13,8 @@ gender_type = {
 
 class FarfetchSpider(scrapy.Spider):
     name = "cloth"
-    url = ["https://www.farfetch.com/ca/shopping/women/dresses-1/items.aspx"]
+    url = ["https://www.farfetch.com/ca/shopping/women/dresses-1/items.aspx?page=1",
+           "https://www.farfetch.com/ca/shopping/women/dresses-1/items.aspx?page=2"]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
